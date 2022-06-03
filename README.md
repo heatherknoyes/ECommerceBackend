@@ -4,9 +4,7 @@
 
 ## Description
 
-The motivation for this project was to implement the backend of an E-Commerce system using the package Sequelize to be testable with an application like Postman or Insomnia. I utilized Express.js for my middleware and used Node as the package manager.
-
-The thing I'm most proud of for this project is not the functionality itself, but all of the tools that I learned along the way like Heroku/Insomnia/Javascript Debug within VSCode. I know those skills will be transferrable in the future. Potentially in the future I would like to integrate this site with a backend database so that each time it is generated a file on the computer does not grow. With the completion of this project I fulfilled the following user story and acceptance criteria.
+The motivation for this project was to implement the backend of an E-Commerce system using the package Sequelize to be testable with an application like Postman or Insomnia. I utilized Express.js for my middleware and used Node as the package manager. Potentially in the future I would like to make a user interface for this application rather than just a backend implementation. With the completion of this project I fulfilled the following user story and acceptance criteria.
 
 [Video of Functioning Application](https://drive.google.com/file/d/1JVjMq3okLjP7JDPnsIwYb503PJ9IhpSW/view)
 
@@ -45,13 +43,13 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Installation
 
-You will need an instance of MySQL installed so that you can run this locally. Run the following command in order to be able to install the package for this code:
+Set up a local .env file with your mysql user and password by using the .env.EXAMPLE file provided. You will need an instance of MySQL installed so that you can run this locally. Run the following command in order to be able to install the package for this code:
 
     npm install
 
 ## Usage
 
-To run this code from the parent directory use the following command:
+To run this code from the parent directory after setup use the following commands:
 
     mysql -u root -p -> enter in your password for mysql within the prompt
     source db/schema.sql

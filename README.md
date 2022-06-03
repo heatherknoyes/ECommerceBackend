@@ -8,7 +8,7 @@ The motivation for this project was to implement the backend of an E-Commerce sy
 
 The thing I'm most proud of for this project is not the functionality itself, but all of the tools that I learned along the way like Heroku/Insomnia/Javascript Debug within VSCode. I know those skills will be transferrable in the future. Potentially in the future I would like to integrate this site with a backend database so that each time it is generated a file on the computer does not grow. With the completion of this project I fulfilled the following user story and acceptance criteria.
 
-[Video of Functioning Application](https://github.com/heatherknoyes/ECommerceBackend)
+[Video of Functioning Application](https://drive.google.com/file/d/1JVjMq3okLjP7JDPnsIwYb503PJ9IhpSW/view)
 
 ## User Story
 
@@ -45,7 +45,7 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Installation
 
-Run the following command in order to be able to install the package for this code:
+You will need an instance of MySQL installed so that you can run this locally. Run the following command in order to be able to install the package for this code:
 
     npm install
 
@@ -53,6 +53,10 @@ Run the following command in order to be able to install the package for this co
 
 To run this code from the parent directory use the following command:
 
+    mysql -u root -p -> enter in your password for mysql within the prompt
+    source db/schema.sql
+    \q
+    npm run seed
     npm start
 
 ## License
@@ -62,12 +66,6 @@ This project is covered under the following license: [![License: Apache](https:/
 ## Contributing
 
 To contribute to this project please clone the repo locally and commit your code using a separate branch. Please have unit tests for your code and make sure all tests pass using the test command before opening a pull request.
-
-## Tests
-
-Run the following command to initiate tests on the code:
-
-    npm test
 
 ## Questions
 
